@@ -98,6 +98,21 @@
   .intro-card p:last-child { margin-bottom: 0; }
   .highlight { background: var(--gold-soft); padding: 2px 6px; border-radius: 6px; font-weight: 700; }
 
+  /* Join */
+  #join { padding-bottom: 0; }
+  .join-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .join-card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+  .join-icon { width: 46px; height: 46px; border-radius: 12px; background: var(--blue-soft); color: var(--blue-deep); display: grid; place-items: center; margin-bottom: 12px; }
+  .join-icon.green { background: var(--green-soft); color: var(--green-deep); }
+  .join-card h3 { margin: 0 0 4px; font-size: 19px; }
+  .join-card p { margin: 0; color: var(--ink-soft); }
+  .tips { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+  .tips li { position: relative; padding-left: 22px; color: var(--ink-soft); }
+  .tips li::before { content: ""; position: absolute; left: 4px; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
+  .camera-note { margin-top: 14px; display: flex; gap: 14px; align-items: flex-start; background: var(--gold-soft); border: 1px solid var(--gold); border-radius: 16px; padding: 18px 20px; color: #8a5a1c; }
+  .camera-note svg { flex: none; margin-top: 2px; }
+  .camera-note p { margin: 0; color: var(--ink); }
+
   /* Steps */
   .steps { list-style: none; margin: 0; padding: 0; counter-reset: step; display: grid; gap: 14px; }
   .steps li {
@@ -159,6 +174,7 @@
     .steps li { padding: 18px 18px 18px 68px; }
     .steps li::before { left: 16px; width: 36px; height: 36px; font-size: 16px; }
     .checklist { grid-template-columns: 1fr; }
+    .join-grid { grid-template-columns: 1fr; }
     .btn { flex: 1 1 100%; }
   }
 </style>
@@ -179,6 +195,7 @@
     <p>Thank you for joining us as a guest expert. This guide covers how the show runs, so you can come prepared and leave our listeners with practical, relatable takeaways.</p>
     <div class="facts">
       <span>LagosTalks 91.3FM</span>
+      <span>Thursdays, 12:30–1pm WAT · Live</span>
       <span>On air for 6+ years</span>
       <span>Hosted by Yetty Williams, founder of LagosMums</span>
     </div>
@@ -197,6 +214,37 @@
     </div>
   </div>
 </div>
+
+<section id="join">
+  <div class="wrap">
+    <h2>When and how to join</h2>
+    <p class="sub">The show is live every <strong>Thursday, 12:30pm – 1:00pm WAT</strong>. Choose the option that works best for you.</p>
+    <div class="join-grid">
+      <div class="join-card">
+        <div class="join-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>In the studio</h3>
+        <p>Join us in person at the studio in <strong>Ikoyi (Keffi Street)</strong>, Lagos.</p>
+      </div>
+      <div class="join-card">
+        <div class="join-icon green" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+        </div>
+        <h3>Virtually on Zoom</h3>
+        <p>Join from wherever you are via Zoom.</p>
+        <ul class="tips">
+          <li>Make sure you have a <strong>strong internet signal</strong></li>
+          <li>Find a <strong>quiet space</strong> with no background noise</li>
+        </ul>
+      </div>
+    </div>
+    <div class="camera-note">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg>
+      <p><strong>Please keep your camera on.</strong> The show is streamed live, so we need to see you, whether you join in the studio or on Zoom.</p>
+    </div>
+  </div>
+</section>
 
 <section id="format">
   <div class="wrap">

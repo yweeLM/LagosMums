@@ -106,6 +106,9 @@
   .join-icon.green { background: var(--green-soft); color: var(--green-deep); }
   .join-card h3 { margin: 0 0 4px; font-size: 19px; }
   .join-card p { margin: 0; color: var(--ink-soft); }
+  .studio-address { font-style: normal; font-weight: 700; color: var(--ink); margin: 8px 0 12px; line-height: 1.5; }
+  .map-link { color: var(--blue-deep); font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--blue-soft); }
+  .map-link:hover { border-color: var(--blue); }
   .tips { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; }
   .tips li { position: relative; padding-left: 22px; color: var(--ink-soft); }
   .tips li::before { content: ""; position: absolute; left: 4px; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
@@ -225,7 +228,9 @@
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
         <h3>In the studio</h3>
-        <p>Join us in person at the studio in <strong>Ikoyi (Keffi Street)</strong>, Lagos.</p>
+        <p>Join us in person at the studio:</p>
+        <address class="studio-address">26, Keffi Street,<br>Off Awolowo Road,<br>Ikoyi, Lagos</address>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=26%20Keffi%20Street%2C%20Ikoyi%2C%20Lagos" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
       </div>
       <div class="join-card">
         <div class="join-icon green" aria-hidden="true">
